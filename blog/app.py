@@ -17,7 +17,7 @@ def home():
     return render_template('index.html', pages=sorted_posts)
 
 
-@app.route('/<path:path>/')
+@app.route('/posts/<path:path>/')
 def page(path):
     # Path is the filename of a page, without the file extension
     # e.g. "first-post"
