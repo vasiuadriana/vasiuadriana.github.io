@@ -15,7 +15,7 @@ def home():
     # Sort pages by date
     sorted_posts = sorted(posts, reverse=True,
         key=lambda page: page.meta['date'])
-    return render_template('index.html', pages=sorted_posts)
+    return render_template('index.html', pages=sorted_posts, number_of_pages=len(sorted_posts))
 
 
 @app.route('/posts/<path:path>/')

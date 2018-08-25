@@ -5,13 +5,16 @@
         <div class="post-preview">
             <a href="{{ url_for('page', path=page.path) }}">
                 <h2 class="post-title">{{ page.meta.title }}</h2>
+                <h3 class="post-subtitle">{{ page.meta.preview }}</h3>
             </a>
             <p class="post-meta">Posted by Adriana Vasiu on {{ page.meta.date }}</p>
         </div>
         <hr>
     {% endfor %}
     <!-- Pager -->
-    <div class="clearfix">
-    <a class="btn btn-primary float-right" href="#">Older Posts &rarr;</a>
-    </div>
+    {%if number_of_pages > 5 %}
+        <div class="clearfix">
+        <a class="btn btn-primary float-right" href="#">Older Posts &rarr;</a>
+        </div>
+    {% endif %}
 {% endblock %}
