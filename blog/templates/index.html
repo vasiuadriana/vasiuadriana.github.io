@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
     <!-- Posts Preview -->
-    {% for page in pages %}
+    {% for page in pages[0:5] %}
         <div class="post-preview">
             <a href="{{ url_for('page', path=page.path) }}">
                 <h2 class="post-title">{{ page.meta.title }}</h2>
@@ -9,7 +9,6 @@
             </a>
             <p class="post-meta">Posted by Adriana Vasiu on {{ page.meta.date }}</p>
         </div>
-        <hr>
     {% endfor %}
     <!-- Pager -->
     {%if number_of_pages > 5 %}
