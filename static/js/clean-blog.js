@@ -1,3 +1,10 @@
+/* Start Bootstrap - Clean Blog Theme (https://github.com/BlackrockDigital/startbootstrap-clean-blog)
+ *
+ * Copyright 2013-2018 Blackrock Digital LLC
+ *
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-clean-blog/blob/master/LICENSE)
+ */
+
 (function($) {
   "use strict"; // Start of use strict
 
