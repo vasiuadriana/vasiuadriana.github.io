@@ -1,13 +1,15 @@
 <!doctype html>
 <head>
-  <meta charset="utf-8">
-  <title>{% block page_title %} Mooses Love Forest{% endblock %}</title>
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet"  href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css') }}">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>{% block page_title %} Mooses Love Forest{% endblock %}</title>
 
-    <!-- Custom styles for this template -->
+    <!-- CSS -->
+    <link rel="stylesheet"  href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css') }}">
     <link rel="stylesheet"  href="{{ url_for('static', filename='css/clean-blog.min.css') }}">
-  {% block css %}{% endblock %}
+    {% block css %}{% endblock %}
 </head>
 <body>
     <!-- Navigation -->
@@ -30,7 +32,7 @@
       </div>
     </nav>
 
-    <!-- Page Header -->
+    <!-- Header -->
     <header class="masthead" style="background-image: url({{ url_for('static', filename='img/home-bg.jpg') }})">
       <div class="overlay"></div>
       <div class="container">
@@ -44,10 +46,58 @@
       </div>
     </header>
 
-  <div class="content" role="main">
-    {% block content %}{% endblock %}
-  </div>
+    <!-- Content -->
+    <!-- Main Content -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+            {% block content %}{% endblock %}
+        </div>
+      </div>
+    </div>
 
-</div><!-- end container -->
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <ul class="list-inline text-center">
+              <li class="list-inline-item">
+                <a href="#">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+            </ul>
+            <p class="copyright text-muted">Copyright &copy; Mooses Love Forest 2018</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="{{ url_for('static', filename='vendor/jquery/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/clean-blog.min.js') }}"></script>
 </body>
 </html>
