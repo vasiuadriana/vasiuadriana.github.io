@@ -1,3 +1,4 @@
 .idea/*
 */__pycache__/*
 blog/static/*
+*.DS_Store
