@@ -6,6 +6,16 @@
     <meta name="author" content="">
     <title>{% block page_title %} Mooses Love Forest {% endblock %}</title>
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126259441-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-126259441-1');
+    </script>
+
     <!-- CSS -->
     <link rel="stylesheet"  href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css') }}">
     <link rel="stylesheet"  href="{{ url_for('static', filename='vendor/clean-blog-theme/css/clean-blog.min.css') }}">
