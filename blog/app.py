@@ -1,10 +1,11 @@
-import os
 from flask import Flask, render_template
 from flask_flatpages import FlatPages
 from flask_frozen import Freezer
+from flask_sitemap import Sitemap
 
 app = Flask(__name__)
 app.config.from_pyfile('settings.py')
+ext = Sitemap(app=app)
 pages = FlatPages(app)
 app_freezer = Freezer(app)
 
@@ -18,6 +19,11 @@ def home():
     return render_template('index.html', pages=sorted_posts, number_of_pages=len(sorted_posts))
 
 
+@ext.register_generator
+def home():
+    yield 'home', {}
+
+
 @app.route('/posts/<path:path>/')
 def page(path):
     # Path is the filename of a page, without the file extension
@@ -26,6 +32,17 @@ def page(path):
     return render_template('page.html', page=page)
 
 
+@ext.register_generator
+def page():
+    for p in pages:
+        yield 'page', {'path': p.path}
+
+
 @app.route('/about/')
 def about():
     return render_template('about.html')
+
+
+@ext.register_generator
+def about():
+    yield 'about', {}
