@@ -46,10 +46,4 @@ and spend most of their time deep in the forests. I wanted to see one in their n
 One evening, when coming back from Öregrund, I saw a huge moose just metres away from the road. 
 Just pay extra attention between dusk and dawn - that's when it's most likely to spot a moose on the loose!
 
-
-
-
-
-
-
-
+![Mooooose](/static/img/moose.jpg)
