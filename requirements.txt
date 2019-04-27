@@ -3,4 +3,5 @@ Jinja2>=2.7
 MarkupSafe>=0.18
 Werkzeug>=0.9.1
 flask-flatpages
-frozen-flask
+Flask-Sitemap==0.3.0
+Frozen-Flask==0.15

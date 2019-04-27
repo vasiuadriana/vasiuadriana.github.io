@@ -1,3 +1,5 @@
+import datetime
+
 from flask import Flask, render_template
 from flask_flatpages import FlatPages
 from flask_frozen import Freezer
@@ -14,8 +16,10 @@ app_freezer = Freezer(app)
 def home():
     posts = [page for page in pages if 'date' in page.meta]
     # Sort pages by date
-    sorted_posts = sorted(posts, reverse=True,
-        key=lambda page: page.meta['date'])
+    sorted_posts = sorted(
+        posts, reverse=True,
+        key=lambda page: datetime.datetime.strptime(page.meta['date'], '%d %B %Y')
+    )
     return render_template('index.html', pages=sorted_posts, number_of_pages=len(sorted_posts))
 
 
