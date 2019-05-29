@@ -1,5 +1,6 @@
 title: Looking for a Place and Discovering a Feeling
 date: 8 November 2018
+description: home in london
 preview: Looking for the place we call home ... 
 
 It’s amazing how much time we spend trying to find and make a home. 

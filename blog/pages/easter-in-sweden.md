@@ -1,6 +1,7 @@
 title: Easter break in Sweden
 date: 27 April 2019
 preview: How to celebrate Easter Swedish style
+description: easter break in Sweden
 
 I decided that this year I am going to spend the Easter break in Sweden. I wasn't expecting good weather on the east coast 
 but Sweden is beautiful even in bad weather so I started my travels with warm clothes and full of hope. 

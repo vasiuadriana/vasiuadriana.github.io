@@ -1,6 +1,7 @@
 title: Life in the Big City
 date: 23 September 2018
-preview: Life in London is not how I imagined it but it works...  
+preview: Life in London is not how I imagined it but it works...
+description: life in London  
 
 Years ago, when I was sitting and reading in my grandmother's room back home, in a small village in Transilvania, I dreamt about living in the big city.
 I wanted the buzz, I wanted to meet new people and go to movies whenever I wanted, I didn't want to use only the books and my imagination to travel. 
